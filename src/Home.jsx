@@ -24,7 +24,7 @@ export default function Home() {
       "Tailored Solutions",
       "Your security blueprint, our expertise. Customized hacking solutions for a digital fortress that evolves with you.",
       "Learn More",
-      "/pakage",
+      "/package",
       {
         textAlign: "left",
         display: "flex",
