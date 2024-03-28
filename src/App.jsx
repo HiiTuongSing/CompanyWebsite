@@ -10,7 +10,7 @@ import PageNotFound from "./PageNotFound";
 
 export default function App() {
   function displayPage() {
-  const basePath = "/repository-name"; // Replace "repository-name" with your actual repository name
+  const basePath = "/CompanyWebsite"; 
   const path = window.location.pathname.replace(basePath, "");
 
   switch (path) {
