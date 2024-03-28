@@ -10,21 +10,25 @@ import PageNotFound from "./PageNotFound";
 
 export default function App() {
   function displayPage() {
-    const path = window.location.pathname;
-    if (path == "/about") {
+  const basePath = "/repository-name"; // Replace "repository-name" with your actual repository name
+  const path = window.location.pathname.replace(basePath, "");
+
+  switch (path) {
+    case "/about":
       return <About />;
-    } else if (path == "/packages") {
+    case "/packages":
       return <Packages />;
-    } else if (path == "/contact") {
+    case "/contact":
       return <Contact />;
-    } else if (path == "/services") {
+    case "/services":
       return <Services />;
-    } else if (path == "/") {
+    case "/":
       return <Home />;
-    } else {
+    default:
       return <PageNotFound />;
-    }
   }
+}
+
 
   return (
     <div className="container-fluid p-0">
