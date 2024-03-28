@@ -19,7 +19,7 @@ export default function App() {
       return <Contact />;
     } else if (path == "/services") {
       return <Services />;
-    } else if (path == "https://hiituongsing.github.io/CompanyWebsite/") {
+    } else if (path == "/") {
       return <Home />;
     } else {
       return <PageNotFound />;
